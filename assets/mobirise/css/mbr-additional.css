@@ -723,8 +723,6 @@ section.lazy-placeholder:after {
   -webkit-flex-direction: column;
   word-break: break-word;
   padding: 1rem;
-  background: #55b4d4;
-  border-radius: 15px;
 }
 .cid-s6OPv3Xqrn .media {
   margin: initial;
@@ -737,11 +735,6 @@ section.lazy-placeholder:after {
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
   margin: auto 20px;
-  background: #55b4d4;
-  border-radius: 15px;
-}
-.cid-s6OPv3Xqrn .mbr-figure img {
-  padding: 2rem;
 }
 .cid-s6OPv3Xqrn .card {
   padding: 0 1rem;
