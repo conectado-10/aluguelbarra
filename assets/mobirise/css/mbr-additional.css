@@ -702,6 +702,12 @@ section.lazy-placeholder:after {
 .cid-spXvgcy7jS p {
   color: #939bb4;
 }
+.cid-FuQPnSDMHm .modal-dialog {
+  height: auto;
+}
+.cid-FuQPnSDMHm .hidden {
+  display: none;
+}
 @primaryColor: #133996;
 @secondaryColor: #fc643f;
 @successColor: #00c48c;

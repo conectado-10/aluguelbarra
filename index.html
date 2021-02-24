@@ -115,6 +115,76 @@
     </div>
 </section>
 
+<section class="mbr-section cid-FuQPnSDMHm" id="design-block-FuQPnSDMHm">
+
+    
+
+<style>
+/* Let's not animate the contents of modal windows */
+.no-anim {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+}
+</style>
+
+
+<div style="padding:1rem" class="hidden">
+    <input type="button" class="btn btn-primary display-4" data-toggle="modal" value="Preview INFORMAÇÃO" data-target="#INFORMAÇÃO">
+    <input type="button" class="btn btn-primary display-4" data-toggle="modal" value="How to use" data-target="#INFORMAÇÃOHelp">
+    This preview button will be removed on preview/publish.
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="INFORMAÇÃO" aria-labelledby="INFORMAÇÃOLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="no-anim modal-title">INFORMAÇÃO P-54</h5>
+                <a href="#" class="no-anim close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+            </div>
+            <p class="modal-body mbr-text align-left pb-3 mbr-fonts-style">&nbsp;- JOHNATAN GARCIA REZENDE &nbsp;(Filho recem nascido) P-54<br>&nbsp;-&nbsp;RODRIGO DE PAULA NICACIO (Atestado Medico ate dia 25/02)</p>
+            <div class="modal-footer">
+                <div class="mbr-section-btn"><a href="#" class="no-anim btn btn-black display-4" data-dismiss="modal">CIENTE</a>
+                    <a href="#" class="no-anim btn btn-md btn-black-outline display-4">P-54</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade hidden" tabindex="-1" role="dialog" aria-hidden="true" id="INFORMAÇÃOHelp" aria-labelledby="INFORMAÇÃOHelpLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="h5 no-anim modal-title" id="INFORMAÇÃOHelpLabel">Modal title</div>
+                <a href="#" class="no-anim close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+            </div>
+            <div class="modal-body">
+                Using your new modal is very easy. Simply create a new link, then click the "..." tab and enter the following as custom URL:<br><br>
+                <code>javascript:OpenModal('YourModalName')</code><br><br>
+                Replace 'YourModalName' with the name you chose.
+            </div>
+            <div class="modal-footer">
+                <div class="display-4">
+                    <a href="#" class="no-anim btn btn-secondary display-4" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+if (typeof OpenModal === 'undefined') {
+    OpenModal = function(modalName) {
+        if ($('#' + modalName).length)
+            $('#' + modalName).modal('show');
+    }
+}
+</script>    
+
+</section>
+
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
