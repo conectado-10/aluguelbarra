@@ -694,6 +694,12 @@ section.lazy-placeholder:after {
   padding: 0;
   margin: 0;
 }
+.cid-FuQPnSDMHm .modal-dialog {
+  height: auto;
+}
+.cid-FuQPnSDMHm .hidden {
+  display: none;
+}
 .cid-spXvgcy7jS {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -701,12 +707,6 @@ section.lazy-placeholder:after {
 }
 .cid-spXvgcy7jS p {
   color: #939bb4;
-}
-.cid-FuQPnSDMHm .modal-dialog {
-  height: auto;
-}
-.cid-FuQPnSDMHm .hidden {
-  display: none;
 }
 @primaryColor: #133996;
 @secondaryColor: #fc643f;
