@@ -172,8 +172,8 @@
             "modalLinkUrl": "https://mobirise.com/",
             "modalLinkText": "Visit Mobirise",
             "modalLinkNewWindow": true,
-            "modalVerticalCenter": false,
-            "modalFade": false,
+            "modalVerticalCenter": true,
+            "modalFade": true,
             "modalAutoOpen": true,
             "modalAutoOpenOnce": false,
             "modalAutoOpenGDPR": true,
@@ -187,7 +187,7 @@
           ],
           "_name": "witsec-modal-window-block",
           "_anchor": "witsec-modal-window-block-2f",
-          "modalWindow": "<div class=\"modal \" id=\"ajustes\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ajustesLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"ajustesLabel\">INFORMAÇÃO</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"ajustes_body\">LEDIR CAETANO E LEONARDO AZEVEDO , DESEMBARQUE POR SITOMAS DE COVID19</div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">OK</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#ajustes\").on(\"hidden.bs.modal\", function () {    var html = $( \"#ajustes_body\" ).html();    $( \"#ajustes_body\" ).empty();    $( \"#ajustes_body\" ).append(html);  })});</script>"
+          "modalWindow": "<div class=\"modal fade\" id=\"ajustes\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ajustesLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  modal-dialog-centered\" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"ajustesLabel\">INFORMAÇÃO</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"ajustes_body\">LEDIR CAETANO E LEONARDO AZEVEDO , DESEMBARQUE POR SITOMAS DE COVID19</div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">OK</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#ajustes\").on(\"hidden.bs.modal\", function () {    var html = $( \"#ajustes_body\" ).html();    $( \"#ajustes_body\" ).empty();    $( \"#ajustes_body\" ).append(html);  })});</script>"
         }
       ]
     },
