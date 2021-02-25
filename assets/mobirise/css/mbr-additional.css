@@ -2892,3 +2892,69 @@ p {
 
 #witsec-custom-html-block-31 {
 }
+@primaryColor: #133996;
+@secondaryColor: #fc643f;
+@successColor: #00c48c;
+@infoColor: #fdece8;
+@warningColor: #ffcf5c;
+@dangerColor: #939bb4;
+@mainFont: DM Sans;
+@display1Font: 'DM Sans', sans-serif;
+@display1Size: 3.25;
+@display2Font: 'DM Sans', sans-serif;
+@display2Size: 2.125;
+@display5Font: 'DM Sans', sans-serif;
+@display5Size: 1.5;
+@display7Font: 'DM Sans', sans-serif;
+@display7Size: 1.0625;
+@display4Font: 'DM Sans', sans-serif;
+@display4Size: 0.875;
+@isRoundedButtons: true;
+@isAnimatedOnScroll: false;
+@isScrollToTopButton: false;
+@isPublish: true;
+
+.cid-sq3iQJ5m4P {
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+background-color: @bgColor;
+.mbr-section {
+  text-align: center;
+  color: #fff;
+}
+P {
+  text-align: center;
+}
+}
+
+#witsec-custom-html-block-4y {
+}
+
+.cid-sq3iReqkZz {
+@paddingTop: 2;
+@paddingBottom: 2;
+@reveal: false;
+@uname__8: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/sintoniabarra_0040gmail_002ecom/addons/creativem4/components/footer01/../_images/background1.jpg";
+@uname__9: false;
+@uname__10: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@overlay: true;
+@overlayColor: #232323;
+@overlayOpacity: 0.8;
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+& when (@bg-type = "image") {
+  background-image: url(../../../@bg-value);
+}
+& when (@bg-type = "color") {
+  background-color: @bg-value;
+}
+p {
+  color: @dangerColor;
+}
+}
