@@ -41,7 +41,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 87,
+    "uniqCompNum": 88,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "favicon": false,
@@ -136,25 +136,6 @@
         {
           "alias": false,
           "_styles": {
-            ".modal-dialog": {
-              "height": "auto"
-            },
-            ".hidden": {
-              "display": "none"
-            }
-          },
-          "_name": "design-block",
-          "_customHTML": "<section class=\"mbr-section\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"text\" title=\"Modal Name (single word)\" name=\"modalID\" value=\"INFORMAÇÃO\">\n        <select name=\"modalSize\" title=\"Size\" condition=\"modalID\">\n            <option value=\"small\">Small</option>\n            <option value=\"medium\" selected>Medium</option>\n            <option value=\"large\">Large</option>\n        </select>\n        <input type=\"checkbox\" title=\"Header\" name=\"modalHeader\" condition=\"modalID\" checked>\n        <input type=\"checkbox\" title=\"Footer\" name=\"modalFooter\" condition=\"modalID\">\n        <input type=\"checkbox\" title=\"Close Button\" name=\"modalCloseBtn\" condition=\"modalID && modalFooter\" checked>\n        <input type=\"checkbox\" title=\"Additional Buttons\" name=\"modalMoreBtns\" condition=\"modalID && modalFooter\" checked>\n        <input type=\"checkbox\" title=\"Vertically Centered\" name=\"modalVertical\" condition=\"modalID\">\n        <input type=\"checkbox\" title=\"Fade Effect\" name=\"modalFade\" condition=\"modalID\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n<style>\n/* Let's not animate the contents of modal windows */\n.no-anim {\n    -webkit-animation: none !important;\n    -moz-animation: none !important;\n    -o-animation: none !important;\n    -ms-animation: none !important;\n    animation: none !important;\n}\n</style>\n\n<div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem\" mbr-if=\"!modalID\">Click the \"gear\" icon to give your modal window an ID (use a single word only).</div>\n<div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem\" mbr-if=\"modalID\">\n    <input type=\"button\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#{{modalID}}\" value=\"Preview {{modalID}}\">\n    <input type=\"button\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#{{modalID}}Help\" value=\"How to use\">\n    This preview button will be removed on preview/publish.\n</div>\n\n<div class=\"modal\" mbr-class=\"{'fade' : modalFade}\" id=\"{{modalID}}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"{{modalID}}Label\" aria-hidden=\"true\">\n    <div class=\"modal-dialog\" mbr-class=\"{'modal-sm' : modalSize == 'small', 'modal-lg' : modalSize == 'large', 'modal-dialog-centered' : modalVertical}\" role=\"document\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header\" mbr-if=\"modalHeader\">\n                <h5 class=\"no-anim modal-title\" id=\"{{modalID}}Label\">INFORMAÇÃO P-54</h5>\n                <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></a>\n            </div>\n            <p class=\"modal-body mbr-text align-left pb-3 mbr-fonts-style\" data-app-selector=\".mbr-text, .mbr-section-btn\">&nbsp;- JOHNATAN GARCIA REZENDE &nbsp;(Filho recem nascido) P-54<br>&nbsp;-&nbsp;RODRIGO DE PAULA NICACIO (Atestado Medico ate dia 25/02)</p>\n            <div class=\"modal-footer\" mbr-if=\"modalFooter\">\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"modalMoreBtns\" data-toolbar=\"-mbrBtnMove\"><a href=\"#\" class=\"no-anim btn btn-black\" data-dismiss=\"modal\" data-app-placeholder=\"Type Text\">CIENTE</a>\n                    <a href=\"#\" class=\"no-anim btn btn-md btn-black-outline\" data-app-placeholder=\"Type Text\">P-54</a></div>\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"modal fade\" mbr-class=\"{'hidden': isPublish}\" id=\"{{modalID}}Help\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"{{modalID}}HelpLabel\" aria-hidden=\"true\" mbr-if=\"modalID\">\n    <div class=\"modal-dialog\" role=\"document\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header\">\n                <div class=\"h5 no-anim modal-title\" id=\"{{modalID}}HelpLabel\">INFORMAÇÃO</div>\n                <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></a>\n            </div>\n            <div class=\"modal-body\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br><br>\n                <code>javascript:OpenModal('YourModalName')</code><br><br>\n                Replace 'YourModalName' with the name you chose.\n            </div>\n            <div class=\"modal-footer\">\n                <div mbr-theme-style=\"display-4\">\n                    <a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">Close</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n<script>\nif (typeof OpenModal === 'undefined') {\n    OpenModal = function(modalName) {\n        if ($('#' + modalName).length)\n            $('#' + modalName).modal('show');\n    }\n}\n</script>    \n\n</section>",
-          "_cid": "FuQPnSDMHm",
-          "_anchor": "design-block-FuQPnSDMHm",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "& when (@bg-type = \"image\")": {
@@ -175,6 +156,38 @@
           "_global": true,
           "_once": true,
           "_params": {}
+        },
+        {
+          "_params": {
+            "modalName": "ajustes",
+            "modalSize": "medium",
+            "modalHeader": true,
+            "modalTitle": "INFORMAÇÃO",
+            "modalBody": "LEDIR CAETANO E LEONARDO AZEVEDO , DESEMBARQUE POR SITOMAS DE COVID19",
+            "modalBodyHTML": false,
+            "modalFooter": true,
+            "modalCloseBtn": true,
+            "modalCloseText": "Close",
+            "modalLink": false,
+            "modalLinkUrl": "https://mobirise.com/",
+            "modalLinkText": "Visit Mobirise",
+            "modalLinkNewWindow": true,
+            "modalVerticalCenter": false,
+            "modalFade": true,
+            "modalAutoOpen": true,
+            "modalAutoOpenOnce": true,
+            "modalAutoOpenGDPR": true,
+            "modalAutoOpenDelay": 0
+          },
+          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#ajustes\">Preview ajustes</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#ajustes-howtouse\">How to use ajustes</a>\n</div>\n<div class=\"modal fade\" id=\"ajustes-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ajustes-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"ajustes-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('ajustes')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
+          "modalBody": "LEDIR CAETANO E LEONARDO AZEVEDO , DESEMBARQUE POR SITOMAS DE COVID19",
+          "alias": "witsec-modal-window",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-modal-window-block",
+          "_anchor": "witsec-modal-window-block-2f",
+          "modalWindow": "<div class=\"modal fade\" id=\"ajustes\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ajustesLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"ajustesLabel\">INFORMAÇÃO</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"ajustes_body\">LEDIR CAETANO E LEONARDO AZEVEDO , DESEMBARQUE POR SITOMAS DE COVID19</div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">Close</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#ajustes\").on(\"hidden.bs.modal\", function () {    var html = $( \"#ajustes_body\" ).html();    $( \"#ajustes_body\" ).empty();    $( \"#ajustes_body\" ).append(html);  })});</script>"
         }
       ]
     },
