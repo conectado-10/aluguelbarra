@@ -1056,99 +1056,136 @@ p {
   color: @dangerColor;
 }
 }
-.cid-spX67CebHG {
-  padding-top: 45px;
-  padding-bottom: 90px;
-  background-color: #ffffff;
+@primaryColor: #133996;
+@secondaryColor: #fc643f;
+@successColor: #00c48c;
+@infoColor: #fdece8;
+@warningColor: #ffcf5c;
+@dangerColor: #939bb4;
+@mainFont: DM Sans;
+@display1Font: 'DM Sans', sans-serif;
+@display1Size: 3.25;
+@display2Font: 'DM Sans', sans-serif;
+@display2Size: 2.125;
+@display5Font: 'DM Sans', sans-serif;
+@display5Size: 1.5;
+@display7Font: 'DM Sans', sans-serif;
+@display7Size: 1.0625;
+@display4Font: 'DM Sans', sans-serif;
+@display4Size: 0.875;
+@isRoundedButtons: true;
+@isAnimatedOnScroll: false;
+@isScrollToTopButton: false;
+@isPublish: true;
+
+.cid-sqjhESVjAo {
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+background-color: @bgColor;
+.mbr-section {
+  text-align: center;
+  color: #fff;
 }
-.cid-spX67CebHG .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-spX67CebHG .container-table {
-  margin: 0 auto;
-}
-.cid-spX67CebHG .scroll {
-  overflow-x: auto;
-  padding: 0;
-}
-.cid-spX67CebHG .dataTables_wrapper {
-  display: block;
-}
-.cid-spX67CebHG .dataTables_wrapper .search {
-  margin-bottom: .5rem;
-}
-.cid-spX67CebHG .dataTables_wrapper .table {
-  overflow-x: auto;
-}
-.cid-spX67CebHG table {
-  width: 100% !important;
-  margin-top: 6px;
-  border: 1px solid #ffffff;
-  margin-bottom: 0;
-}
-.cid-spX67CebHG table th {
-  border-top: none;
-  transition: all .2s;
-  border-bottom: none;
-}
-.cid-spX67CebHG table th:hover {
-  background: #ffffff;
-  color: #000000;
-}
-.cid-spX67CebHG table td {
-  border-top: 1px solid #ffffff;
-}
-.cid-spX67CebHG table.table {
-  background: #efefef;
-}
-.cid-spX67CebHG .dataTables_filter {
-  text-align: right;
-  margin-bottom: .5rem;
-}
-.cid-spX67CebHG .dataTables_filter label {
-  display: inline;
-  white-space: normal !important;
-}
-.cid-spX67CebHG .dataTables_filter input {
-  display: inline;
-  width: auto;
-  margin-left: .5rem;
-  border-radius: 100px;
-  padding-left: 1rem;
-}
-.cid-spX67CebHG .dataTables_info {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  white-space: normal !important;
-}
-@media (max-width: 992px) {
-  .cid-spX67CebHG .dataTables_filter {
-    text-align: center;
-  }
-}
-@media (max-width: 350px) {
-  .cid-spX67CebHG .dataTables_filter {
-    text-align: center;
-  }
-  .cid-spX67CebHG .dataTables_filter input {
-    width: 100% !important;
-    margin-left: 0 !important;
-  }
-}
-.cid-spX67CebHG .head-item {
-  color: #212529;
+P {
   text-align: center;
 }
-.cid-spX67CebHG .body-item {
-  text-align: center;
 }
+
+.cid-sqjiriybgN {
+@fullWidth: true;
+@paddingTop: 1;
+@paddingBottom: 1;
+@hrColor: #000000;
+@hrHeight: 2;
+@uname__13: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/projects/project-2020-08-05_154810/assets/images/background1-1.jpg";
+@uname__14: false;
+@uname__15: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@overlay: true;
+@overlayColor: #ffffff;
+@overlayOpacity: 0.7;
+
+padding-top: (@paddingTop * 1rem);
+padding-bottom: (@paddingBottom * 1rem);
+& when (@bg-type = "color") {
+  background-color: @bg-value;
+}
+& when (@bg-type = "image") {
+  background-image: url(../../../@bg-value);
+}
+hr {
+  border: none;
+  color: @hrColor;
+  background-color: @hrColor;
+  border-radius: 0.5em;
+  height: (@hrHeight * 1px);
+}
+}
+
+.cid-sqjtJHgO9e {
+@fullWidth: true;
+@paddingTop: 1;
+@paddingBottom: 1;
+@hrColor: #000000;
+@hrHeight: 2;
+@uname__13: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/projects/project-2020-08-05_154810/assets/images/background1-1.jpg";
+@uname__14: false;
+@uname__15: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@overlay: true;
+@overlayColor: #ffffff;
+@overlayOpacity: 0.7;
+
+padding-top: (@paddingTop * 1rem);
+padding-bottom: (@paddingBottom * 1rem);
+& when (@bg-type = "color") {
+  background-color: @bg-value;
+}
+& when (@bg-type = "image") {
+  background-image: url(../../../@bg-value);
+}
+hr {
+  border: none;
+  color: @hrColor;
+  background-color: @hrColor;
+  border-radius: 0.5em;
+  height: (@hrHeight * 1px);
+}
+}
+
 .cid-spXvgcy7jS {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
+@paddingTop: 2;
+@paddingBottom: 2;
+@reveal: false;
+@uname__8: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/sintoniabarra_0040gmail_002ecom/addons/creativem4/components/footer01/../_images/background1.jpg";
+@uname__9: false;
+@uname__10: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@overlay: true;
+@overlayColor: #232323;
+@overlayOpacity: 0.8;
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+& when (@bg-type = "image") {
+  background-image: url(../../../@bg-value);
 }
-.cid-spXvgcy7jS p {
-  color: #939bb4;
+& when (@bg-type = "color") {
+  background-color: @bg-value;
+}
+p {
+  color: @dangerColor;
+}
 }
 .cid-spXvgcy7jS {
   padding-top: 30px;
@@ -3251,4 +3288,135 @@ p {
 }
 
 #witsec-custom-html-block-57 {
+}
+@primaryColor: #133996;
+@secondaryColor: #fc643f;
+@successColor: #00c48c;
+@infoColor: #fdece8;
+@warningColor: #ffcf5c;
+@dangerColor: #939bb4;
+@mainFont: DM Sans;
+@display1Font: 'DM Sans', sans-serif;
+@display1Size: 3.25;
+@display2Font: 'DM Sans', sans-serif;
+@display2Size: 2.125;
+@display5Font: 'DM Sans', sans-serif;
+@display5Size: 1.5;
+@display7Font: 'DM Sans', sans-serif;
+@display7Size: 1.0625;
+@display4Font: 'DM Sans', sans-serif;
+@display4Size: 0.875;
+@isRoundedButtons: true;
+@isAnimatedOnScroll: false;
+@isScrollToTopButton: false;
+@isPublish: true;
+
+.cid-sqjvEuWmBO {
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+background-color: @bgColor;
+.mbr-section {
+  text-align: center;
+  color: #fff;
+}
+P {
+  text-align: center;
+}
+}
+
+.cid-sqjvEwdzR7 {
+@fullWidth: true;
+@paddingTop: 1;
+@paddingBottom: 1;
+@hrColor: #000000;
+@hrHeight: 2;
+@uname__13: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/projects/project-2020-08-05_154810/assets/images/background1-1.jpg";
+@uname__14: false;
+@uname__15: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@overlay: true;
+@overlayColor: #ffffff;
+@overlayOpacity: 0.7;
+
+padding-top: (@paddingTop * 1rem);
+padding-bottom: (@paddingBottom * 1rem);
+& when (@bg-type = "color") {
+  background-color: @bg-value;
+}
+& when (@bg-type = "image") {
+  background-image: url(../../../@bg-value);
+}
+hr {
+  border: none;
+  color: @hrColor;
+  background-color: @hrColor;
+  border-radius: 0.5em;
+  height: (@hrHeight * 1px);
+}
+}
+
+.cid-sqjvExqTJr {
+@fullWidth: true;
+@paddingTop: 1;
+@paddingBottom: 1;
+@hrColor: #000000;
+@hrHeight: 2;
+@uname__13: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/projects/project-2020-08-05_154810/assets/images/background1-1.jpg";
+@uname__14: false;
+@uname__15: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@overlay: true;
+@overlayColor: #ffffff;
+@overlayOpacity: 0.7;
+
+padding-top: (@paddingTop * 1rem);
+padding-bottom: (@paddingBottom * 1rem);
+& when (@bg-type = "color") {
+  background-color: @bg-value;
+}
+& when (@bg-type = "image") {
+  background-image: url(../../../@bg-value);
+}
+hr {
+  border: none;
+  color: @hrColor;
+  background-color: @hrColor;
+  border-radius: 0.5em;
+  height: (@hrHeight * 1px);
+}
+}
+
+.cid-sqjvEyi9ON {
+@paddingTop: 2;
+@paddingBottom: 2;
+@reveal: false;
+@uname__8: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/sintoniabarra_0040gmail_002ecom/addons/creativem4/components/footer01/../_images/background1.jpg";
+@uname__9: false;
+@uname__10: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@overlay: true;
+@overlayColor: #232323;
+@overlayOpacity: 0.8;
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+& when (@bg-type = "image") {
+  background-image: url(../../../@bg-value);
+}
+& when (@bg-type = "color") {
+  background-color: @bg-value;
+}
+p {
+  color: @dangerColor;
+}
 }
