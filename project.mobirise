@@ -41,7 +41,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 202,
+    "uniqCompNum": 205,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "favicon": false,
@@ -134,6 +134,38 @@
           "_params": {}
         },
         {
+          "_params": {
+            "modalName": "ajustes",
+            "modalSize": "medium",
+            "modalHeader": true,
+            "modalTitle": "INFORMAÇÃO",
+            "modalBody": "Supervisor Instrumentista N3 desembarcou por motivo  odonto, subindo no lugar dele Augusto Henrique.",
+            "modalBodyHTML": false,
+            "modalFooter": true,
+            "modalCloseBtn": true,
+            "modalCloseText": "OK",
+            "modalLink": false,
+            "modalLinkUrl": "https://mobirise.com/",
+            "modalLinkText": "Visit Mobirise",
+            "modalLinkNewWindow": true,
+            "modalVerticalCenter": false,
+            "modalFade": false,
+            "modalAutoOpen": true,
+            "modalAutoOpenOnce": false,
+            "modalAutoOpenGDPR": true,
+            "modalAutoOpenDelay": "0"
+          },
+          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#ajustes\">Preview ajustes</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#ajustes-howtouse\">How to use ajustes</a>\n</div>\n<div class=\"modal fade\" id=\"ajustes-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ajustes-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"ajustes-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('ajustes')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
+          "modalBody": "Supervisor Instrumentista N3 desembarcou por motivo  odonto, subindo no lugar dele Augusto Henrique.",
+          "alias": "witsec-modal-window",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-modal-window-block",
+          "_anchor": "witsec-modal-window-block-2f",
+          "modalWindow": "<div class=\"modal \" id=\"ajustes\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ajustesLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"ajustesLabel\">INFORMAÇÃO</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"ajustes_body\">Supervisor Instrumentista N3 desembarcou por motivo  odonto, subindo no lugar dele Augusto Henrique.</div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">OK</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#ajustes\").on(\"hidden.bs.modal\", function () {    var html = $( \"#ajustes_body\" ).html();    $( \"#ajustes_body\" ).empty();    $( \"#ajustes_body\" ).append(html);  })});</script>"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -156,38 +188,6 @@
           "_global": true,
           "_once": true,
           "_params": {}
-        },
-        {
-          "_params": {
-            "modalName": "ajustes",
-            "modalSize": "medium",
-            "modalHeader": true,
-            "modalTitle": "INFORMAÇÃO",
-            "modalBody": "-LEDIR CAETANO E --LEONARDO AZEVEDO , DESEMBARQUE POR SITOMAS DE COVID19",
-            "modalBodyHTML": false,
-            "modalFooter": true,
-            "modalCloseBtn": true,
-            "modalCloseText": "OK",
-            "modalLink": false,
-            "modalLinkUrl": "https://mobirise.com/",
-            "modalLinkText": "Visit Mobirise",
-            "modalLinkNewWindow": true,
-            "modalVerticalCenter": false,
-            "modalFade": false,
-            "modalAutoOpen": true,
-            "modalAutoOpenOnce": false,
-            "modalAutoOpenGDPR": true,
-            "modalAutoOpenDelay": "0"
-          },
-          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#ajustes\">Preview ajustes</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#ajustes-howtouse\">How to use ajustes</a>\n</div>\n<div class=\"modal fade\" id=\"ajustes-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ajustes-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"ajustes-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('ajustes')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
-          "modalBody": "-LEDIR CAETANO E --LEONARDO AZEVEDO , DESEMBARQUE POR SITOMAS DE COVID19",
-          "alias": "witsec-modal-window",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "witsec-modal-window-block",
-          "_anchor": "witsec-modal-window-block-2f",
-          "modalWindow": "<div class=\"modal \" id=\"ajustes\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ajustesLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"ajustesLabel\">INFORMAÇÃO</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"ajustes_body\">-LEDIR CAETANO E --LEONARDO AZEVEDO , DESEMBARQUE POR SITOMAS DE COVID19</div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">OK</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#ajustes\").on(\"hidden.bs.modal\", function () {    var html = $( \"#ajustes_body\" ).html();    $( \"#ajustes_body\" ).empty();    $( \"#ajustes_body\" ).append(html);  })});</script>"
         }
       ]
     },
