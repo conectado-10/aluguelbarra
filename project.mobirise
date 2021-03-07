@@ -41,7 +41,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 217,
+    "uniqCompNum": 218,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "favicon": false,
@@ -1188,6 +1188,38 @@
           "_once": false,
           "_params": {},
           "_anchor": "counters01-60"
+        },
+        {
+          "_params": {
+            "modalName": "TELEFONE",
+            "modalSize": "medium",
+            "modalHeader": true,
+            "modalTitle": "CONTATO",
+            "modalBody": "BREVE VOU ESTA COLOCANDO OS CONTATO PARA AS PESSOAS ESTA LIGANDO DIRETO PELO APP!!",
+            "modalBodyHTML": false,
+            "modalFooter": true,
+            "modalCloseBtn": true,
+            "modalCloseText": "Close",
+            "modalLink": false,
+            "modalLinkUrl": "https://mobirise.com/",
+            "modalLinkText": "Visit Mobirise",
+            "modalLinkNewWindow": true,
+            "modalVerticalCenter": false,
+            "modalFade": true,
+            "modalAutoOpen": false,
+            "modalAutoOpenOnce": true,
+            "modalAutoOpenGDPR": true,
+            "modalAutoOpenDelay": 0
+          },
+          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#TELEFONE\">Preview TELEFONE</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#TELEFONE-howtouse\">How to use TELEFONE</a>\n</div>\n<div class=\"modal fade\" id=\"TELEFONE-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"TELEFONE-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"TELEFONE-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('TELEFONE')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
+          "modalBody": "BREVE VOU ESTA COLOCANDO OS CONTATO PARA AS PESSOAS ESTA LIGANDO DIRETO PELO APP!!",
+          "alias": "witsec-modal-window",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-modal-window-block",
+          "_anchor": "witsec-modal-window-block-61",
+          "modalWindow": "<div class=\"modal fade\" id=\"TELEFONE\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"TELEFONELabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"TELEFONELabel\">CONTATO</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"TELEFONE_body\">BREVE VOU ESTA COLOCANDO OS CONTATO PARA AS PESSOAS ESTA LIGANDO DIRETO PELO APP!!</div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">Close</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#TELEFONE\").on(\"hidden.bs.modal\", function () {    var html = $( \"#TELEFONE_body\" ).html();    $( \"#TELEFONE_body\" ).empty();    $( \"#TELEFONE_body\" ).append(html);  })});</script>"
         },
         {
           "alias": false,
