@@ -99,7 +99,7 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-2f" data-rv-view="786">
+<section class="mbr-section" id="witsec-modal-window-block-2f" data-rv-view="3">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -152,7 +152,13 @@
 
 </section><script>
 document.addEventListener("DOMContentLoaded", function() {
-  setTimeout( function() { OpenModal("ajustes"); } , 0);
+  if (modalGetCookie("ajustes_viewed") == "") {
+    setTimeout( function() {
+      if (document.cookie)
+        modalSetCookie("ajustes_viewed", true, 3600);
+      OpenModal("ajustes");
+    } , 0);
+  }
 });
 </script>
 
@@ -179,8 +185,8 @@ document.addEventListener("DOMContentLoaded", function() {
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  <script src="assets/singa4real/shopcart.js"></script>
   <script src="assets/singa4real/singa4real-form.js"></script>
+  <script src="assets/singa4real/shopcart.js"></script>
   <script src="assets/singa4real/plugin-backend.js"></script>
   
   
