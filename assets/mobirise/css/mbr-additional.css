@@ -3591,13 +3591,13 @@ p {
 
 .cid-sthwxLyeOz {
 @showLogo: true;
-@logoSize: 1.5;
+@logoSize: 2;
 @showBrand: true;
 @showItems: true;
 @showButtons: true;
 @showIcons: false;
 @iconsAmount: "2";
-@collapsed: false;
+@collapsed: true;
 @hamburgerColor: #133996;
 @menuBgColor: #ffffff;
 
