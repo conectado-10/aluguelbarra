@@ -4116,7 +4116,7 @@ DIV {
 @showButtons: true;
 @sticky: true;
 @collapsed: true;
-@transparent: false;
+@transparent: true;
 @hamburgerColor: #ffffff;
 @menuBgColor: #ffffff;
 
