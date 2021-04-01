@@ -3591,8 +3591,8 @@ p {
 
 .cid-stjeZLOraE {
 @showTopLine: true;
-@showTopLineHamMenu: false;
-@showTopLineOnScroll: false;
+@showTopLineHamMenu: true;
+@showTopLineOnScroll: true;
 @TopLineEffect: "TopLineEffectNone";
 @TopLineEffectPulseSpeed: 2.7;
 @TopLineEffectPulseCount: 5;
