@@ -1638,93 +1638,179 @@ p {
   color: @dangerColor;
 }
 }
+@primaryColor: #133996;
+@secondaryColor: #fc643f;
+@successColor: #00c48c;
+@infoColor: #fdece8;
+@warningColor: #ffcf5c;
+@dangerColor: #939bb4;
+@mainFont: DM Sans;
+@display1Font: 'DM Sans', sans-serif;
+@display1Size: 3.25;
+@display2Font: 'DM Sans', sans-serif;
+@display2Size: 2.125;
+@display5Font: 'DM Sans', sans-serif;
+@display5Size: 1.5;
+@display7Font: 'DM Sans', sans-serif;
+@display7Size: 1.0625;
+@display4Font: 'DM Sans', sans-serif;
+@display4Size: 0.875;
+@isRoundedButtons: true;
+@isAnimatedOnScroll: false;
+@isScrollToTopButton: false;
+@isPublish: true;
+
 .cid-stQQ6XzmnV {
-  padding-top: 15px;
-  padding-bottom: 75px;
-  background-color: #ffffff;
+@paddingTop: 1;
+@paddingBottom: 5;
+@reverseContent: true;
+@showTitle: true;
+@showSubTitle: false;
+@showText: true;
+@showButton: true;
+@showCardTitle: false;
+@showCardText: true;
+@rowsAmount: "2";
+@cardsAmount: "3";
+@IconSize: 2;
+@iconColor: #133996;
+@cardBgColor: #f5f6fa;
+@titlehover: #bfebf3;
+@uname__14: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/sintoniabarra_0040gmail_002ecom/addons/creativem4/components/features02/../_images/background3.jpg";
+@uname__15: true;
+@uname__16: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@overlay: true;
+@overlayColor: #716c80;
+@overlayOpacity: 0.3;
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+& when (@bg-type = "color") {
+  background-color: @bg-value;
 }
-@media (min-width: 991px) {
-  .cid-stQQ6XzmnV .row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+& when (@bg-type = "image") {
+  background-image: url(../../../@bg-value);
+  background-size: cover;
+}
+& when (@reverseContent) {
+  @media (min-width: 991px) {
+    .row {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+    }
   }
 }
-.cid-stQQ6XzmnV .mbr-section-title {
-  color: #133996;
+.mbr-section-title {
+  color: @primaryColor;
 }
-.cid-stQQ6XzmnV .mbr-text {
-  color: #133996;
+.mbr-text {
+  color: @primaryColor;
 }
-.cid-stQQ6XzmnV .card-img span {
+.card-img span {
   font-size: 96px;
   color: #149dcc;
 }
-.cid-stQQ6XzmnV .mbr-iconfont {
+.mbr-iconfont {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: #133996 !important;
-  font-size: 2rem !important;
+  color: @iconColor !important;
+  font-size: (@IconSize * 1rem) !important;
   font-weight: bold;
 }
-.cid-stQQ6XzmnV .card {
+.card {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  &-outer-wrap {
+    padding-left: 14.1px;
+    padding-right: 14.1px;
+  }
+  &-wrap {
+    background-color: @cardBgColor;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 20px;
+    padding-top: 2.9rem !important;
+    padding-bottom: 2.8rem !important;
+    .card-box {
+      padding-top: 27px;
+    }
+    &:hover {
+      background-color: @titlehover;
+      cursor: crosshair;
+      box-shadow: 0px 5px 20px 1px @titlehover;
+    }
+  }
 }
-.cid-stQQ6XzmnV .card-outer-wrap {
-  padding-left: 14.1px;
-  padding-right: 14.1px;
-}
-.cid-stQQ6XzmnV .card-wrap {
-  background-color: #f5f6fa;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border-radius: 20px;
-  padding-top: 2.9rem !important;
-  padding-bottom: 2.8rem !important;
-}
-.cid-stQQ6XzmnV .card-wrap .card-box {
-  padding-top: 27px;
-}
-.cid-stQQ6XzmnV .card-wrap:hover {
-  background-color: #bfebf3;
-  cursor: crosshair;
-  box-shadow: 0px 5px 20px 1px #bfebf3;
-}
-.cid-stQQ6XzmnV .card-title {
+.card-title {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
-  color: #133996;
+  color: @iconColor;
 }
-.cid-stQQ6XzmnV .row:nth-child(2) {
+.row:nth-child(2) {
   margin-top: 35px !important;
-}
-@media (max-width: 767px) {
-  .cid-stQQ6XzmnV .row:nth-child(2) {
+  @media (max-width: 767px) {
     margin-top: 0px !important;
   }
 }
 @media (max-width: 991px) {
-  .cid-stQQ6XzmnV h1,
-  .cid-stQQ6XzmnV p,
-  .cid-stQQ6XzmnV .mbr-section-btn {
+  h1, p, .mbr-section-btn {
     text-align: center;
   }
 }
 @media (max-width: 576px) {
-  .cid-stQQ6XzmnV .card {
+  .card {
     padding: 2rem !important;
   }
 }
-.cid-spXvgcy7jS {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
 }
-.cid-spXvgcy7jS p {
-  color: #939bb4;
+
+.cid-stVtI72TQw {
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+background-color: @bgColor;
+.mbr-section {
+  text-align: center;
+  color: #fff;
+}
+}
+
+#witsec-custom-html-block-6p {
+}
+
+.cid-spXvgcy7jS {
+@paddingTop: 2;
+@paddingBottom: 2;
+@reveal: false;
+@uname__8: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/sintoniabarra_0040gmail_002ecom/addons/creativem4/components/footer01/../_images/background1.jpg";
+@uname__9: false;
+@uname__10: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@overlay: true;
+@overlayColor: #232323;
+@overlayOpacity: 0.8;
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+& when (@bg-type = "image") {
+  background-image: url(../../../@bg-value);
+}
+& when (@bg-type = "color") {
+  background-color: @bg-value;
+}
+p {
+  color: @dangerColor;
+}
 }
 @primaryColor: #133996;
 @secondaryColor: #fc643f;
@@ -3745,153 +3831,6 @@ p {
 @isAnimatedOnScroll: false;
 @isScrollToTopButton: false;
 @isPublish: true;
-
-.cid-sthhKHNGvs {
-@paddingTop: 2;
-@paddingBottom: 0;
-@showTitle: false;
-@showSubtitle: false;
-@showtext: true;
-@fullWidth: true;
-@noSpacing: true;
-@uname__14: "";
-@uname__15: true;
-@uname__16: #ffffff;
-@bg-value: #ffffff;
-@bg-type: "color";
-@bg-color-value: #ffffff;
-@bg-parallax: false;
-@overlay: true;
-@overlayColor: #efefef;
-@overlayOpacity: 0.8;
-
-padding-top: (@paddingTop * 15px);
-padding-bottom: (@paddingBottom * 15px);
-& when (@bg-type = 'color') {
-  background-color: @bg-value;
-}
-& when (@bg-type = 'image') {
-  background-image: url(../../../@bg-value);
-}
-& when (@noSpacing) {
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .item {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-& when not (@noSpacing) {
-  .item {
-    padding-bottom: 2rem;
-  }
-}
-@media (max-width: 768px) {
-  .carousel-control, .carousel-indicators, .modal .close {
-    position: fixed;
-  }
-}
-@media (max-width: 767px) {
-  .mbr-slider .carousel-control {
-    top: auto;
-    bottom: 20px;
-  }
-  .mbr-slider > .container .carousel-control {
-    margin-bottom: 0;
-  }
-}
-.carousel-indicators {
-  bottom: 0;
-  margin-bottom: 3px;
-  @media (max-width: 991px) {
-    margin-bottom: 3.625rem !important;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
-.carousel-indicators .active, .carousel-indicators li {
-  width: 7px;
-  height: 7px;
-  margin: 3px;
-  background: #1b1b1b;
-  opacity: 0.5;
-  border: 4px solid #1b1b1b;
-}
-.carousel-indicators .active {
-  background: #fff;
-}
-.carousel-indicators li {
-  max-width: 15px;
-  max-height: 15px;
-  border-radius: 50%;
-}
-.modal {
-  padding-left: 0 !important;
-  position: fixed;
-  overflow: hidden;
-  padding-right: 0 !important;
-}
-.modal-dialog {
-  margin: 0 auto;
-  max-width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.modal-content {
-  border-radius: 0;
-  border: none;
-  background: transparent;
-}
-.modal-body {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  .carousel-item {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  img {
-    width: 100%;
-    object-fit: contain;
-    max-height: ~"calc(100vh - 1.75rem)";
-  }
-}
-.carousel {
-  width: 100%;
-}
-.modal-backdrop.in {
-  opacity: 0.8;
-}
-.modal.fade .modal-dialog {
-  -webkit-transition: margin-top 0.3s ease-out;
-  -moz-transition: margin-top 0.3s ease-out;
-  -o-transition: margin-top 0.3s ease-out;
-  transition: margin-top 0.3s ease-out;
-}
-.modal.fade .modal-dialog, .modal.in .modal-dialog {
-  -webkit-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
-}
-.mbr-gallery .item-wrapper {
-  cursor: pointer;
-}
-a {
-  display: block;
-}
-a.img {
-  pointer-events: none;
-}
-H3 {
-  text-align: center;
-}
-}
 
 .cid-sthr0aNjCP {
 @fullWidth: true;
