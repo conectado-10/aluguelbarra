@@ -1638,179 +1638,93 @@ p {
   color: @dangerColor;
 }
 }
-@primaryColor: #133996;
-@secondaryColor: #fc643f;
-@successColor: #00c48c;
-@infoColor: #fdece8;
-@warningColor: #ffcf5c;
-@dangerColor: #939bb4;
-@mainFont: DM Sans;
-@display1Font: 'DM Sans', sans-serif;
-@display1Size: 3.25;
-@display2Font: 'DM Sans', sans-serif;
-@display2Size: 2.125;
-@display5Font: 'DM Sans', sans-serif;
-@display5Size: 1.5;
-@display7Font: 'DM Sans', sans-serif;
-@display7Size: 1.0625;
-@display4Font: 'DM Sans', sans-serif;
-@display4Size: 0.875;
-@isRoundedButtons: true;
-@isAnimatedOnScroll: false;
-@isScrollToTopButton: false;
-@isPublish: true;
-
 .cid-stQQ6XzmnV {
-@paddingTop: 1;
-@paddingBottom: 5;
-@reverseContent: true;
-@showTitle: true;
-@showSubTitle: false;
-@showText: true;
-@showButton: true;
-@showCardTitle: false;
-@showCardText: true;
-@rowsAmount: "2";
-@cardsAmount: "3";
-@IconSize: 2;
-@iconColor: #133996;
-@cardBgColor: #f5f6fa;
-@titlehover: #bfebf3;
-@uname__14: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/sintoniabarra_0040gmail_002ecom/addons/creativem4/components/features02/../_images/background3.jpg";
-@uname__15: true;
-@uname__16: #ffffff;
-@bg-value: #ffffff;
-@bg-type: "color";
-@bg-color-value: #ffffff;
-@bg-parallax: false;
-@overlay: true;
-@overlayColor: #716c80;
-@overlayOpacity: 0.3;
-
-padding-top: (@paddingTop * 15px);
-padding-bottom: (@paddingBottom * 15px);
-& when (@bg-type = "color") {
-  background-color: @bg-value;
+  padding-top: 15px;
+  padding-bottom: 75px;
+  background-color: #ffffff;
 }
-& when (@bg-type = "image") {
-  background-image: url(../../../@bg-value);
-  background-size: cover;
-}
-& when (@reverseContent) {
-  @media (min-width: 991px) {
-    .row {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
-    }
+@media (min-width: 991px) {
+  .cid-stQQ6XzmnV .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 }
-.mbr-section-title {
-  color: @primaryColor;
+.cid-stQQ6XzmnV .mbr-section-title {
+  color: #133996;
 }
-.mbr-text {
-  color: @primaryColor;
+.cid-stQQ6XzmnV .mbr-text {
+  color: #133996;
 }
-.card-img span {
+.cid-stQQ6XzmnV .card-img span {
   font-size: 96px;
   color: #149dcc;
 }
-.mbr-iconfont {
+.cid-stQQ6XzmnV .mbr-iconfont {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: @iconColor !important;
-  font-size: (@IconSize * 1rem) !important;
+  color: #133996 !important;
+  font-size: 2rem !important;
   font-weight: bold;
 }
-.card {
+.cid-stQQ6XzmnV .card {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  &-outer-wrap {
-    padding-left: 14.1px;
-    padding-right: 14.1px;
-  }
-  &-wrap {
-    background-color: @cardBgColor;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    border-radius: 20px;
-    padding-top: 2.9rem !important;
-    padding-bottom: 2.8rem !important;
-    .card-box {
-      padding-top: 27px;
-    }
-    &:hover {
-      background-color: @titlehover;
-      cursor: crosshair;
-      box-shadow: 0px 5px 20px 1px @titlehover;
-    }
-  }
 }
-.card-title {
+.cid-stQQ6XzmnV .card-outer-wrap {
+  padding-left: 14.1px;
+  padding-right: 14.1px;
+}
+.cid-stQQ6XzmnV .card-wrap {
+  background-color: #f5f6fa;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 20px;
+  padding-top: 2.9rem !important;
+  padding-bottom: 2.8rem !important;
+}
+.cid-stQQ6XzmnV .card-wrap .card-box {
+  padding-top: 27px;
+}
+.cid-stQQ6XzmnV .card-wrap:hover {
+  background-color: #bfebf3;
+  cursor: crosshair;
+  box-shadow: 0px 5px 20px 1px #bfebf3;
+}
+.cid-stQQ6XzmnV .card-title {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
-  color: @iconColor;
+  color: #133996;
 }
-.row:nth-child(2) {
+.cid-stQQ6XzmnV .row:nth-child(2) {
   margin-top: 35px !important;
-  @media (max-width: 767px) {
+}
+@media (max-width: 767px) {
+  .cid-stQQ6XzmnV .row:nth-child(2) {
     margin-top: 0px !important;
   }
 }
 @media (max-width: 991px) {
-  h1, p, .mbr-section-btn {
+  .cid-stQQ6XzmnV h1,
+  .cid-stQQ6XzmnV p,
+  .cid-stQQ6XzmnV .mbr-section-btn {
     text-align: center;
   }
 }
 @media (max-width: 576px) {
-  .card {
+  .cid-stQQ6XzmnV .card {
     padding: 2rem !important;
   }
 }
-}
-
-.cid-stVtI72TQw {
-
-padding-top: (@paddingTop * 15px);
-padding-bottom: (@paddingBottom * 15px);
-background-color: @bgColor;
-.mbr-section {
-  text-align: center;
-  color: #fff;
-}
-}
-
-#witsec-custom-html-block-6p {
-}
-
 .cid-spXvgcy7jS {
-@paddingTop: 2;
-@paddingBottom: 2;
-@reveal: false;
-@uname__8: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/sintoniabarra_0040gmail_002ecom/addons/creativem4/components/footer01/../_images/background1.jpg";
-@uname__9: false;
-@uname__10: #ffffff;
-@bg-value: #ffffff;
-@bg-type: "color";
-@bg-color-value: #ffffff;
-@bg-parallax: false;
-@overlay: true;
-@overlayColor: #232323;
-@overlayOpacity: 0.8;
-
-padding-top: (@paddingTop * 15px);
-padding-bottom: (@paddingBottom * 15px);
-& when (@bg-type = "image") {
-  background-image: url(../../../@bg-value);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
 }
-& when (@bg-type = "color") {
-  background-color: @bg-value;
-}
-p {
-  color: @dangerColor;
-}
+.cid-spXvgcy7jS p {
+  color: #939bb4;
 }
 @primaryColor: #133996;
 @secondaryColor: #fc643f;
